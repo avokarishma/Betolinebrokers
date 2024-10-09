@@ -1,0 +1,706 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* global css start */
+html {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.pt-50 {
+  padding-top: 3.125rem;
+}
+
+.pb-50 {
+  padding-bottom: 3.125rem;
+}
+
+.ptb-50 {
+  padding: 3.125rem 0;
+}
+
+.pt-70 {
+  padding-top: 4.375rem;
+}
+
+.pb-70 {
+  padding-bottom: 4.375rem;
+}
+
+.ptb-70 {
+  padding: 4.375rem 0;
+}
+
+.vh100 {
+  height: 100vh;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.col-md-3 {
+  width: 24%;
+}
+
+.col-md-4 {
+  width: 32%;
+}
+
+.col-md-6 {
+  width: 49%;
+}
+
+.site-heading h2 {
+  font-size: 2.5125rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+.sec_one h2{
+  color: #000;
+}
+.what-we-do.section.ptb-70 {
+  background: #000;
+}
+
+.site-heading {
+  max-width: 53.125rem;
+  margin: auto;
+  padding: 0 1.25rem;
+  margin-bottom: 3.125rem;
+}
+
+
+
+
+.card-wrap {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background: #fff;
+  padding: 1.5625rem;
+  border-radius: 8px;
+  height: 100%;
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111;
+  line-height: 1.1;
+}
+
+p {
+  font-size: 16px;
+  color: #777;
+  line-height: 1.7;
+}
+
+/* .scrooll {
+  scroll-snap-type: y mandatory; 
+  height: 100vh; 
+  overflow-y: scroll; 
+}
+
+.section {
+  scroll-snap-align: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #111;
+  border: 1px solid #fff;
+} */
+
+
+/* global css end */
+/* header section css start */
+.site-logo span {
+  color: #3bdbc1;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.site-header {
+  background-color: #000;
+  padding: 0.625rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.site-logo img {
+  max-width: 170px;
+}
+
+.main-nav ul li a {
+  font-size: 0.9375rem;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+  transition: all 0.3s linear;
+}
+
+.main-nav ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #3bdbc1;
+  /* transition: all .3s linear ; */
+  transition: transform 0.2s ease-in-out, color 0s ease-in-out,
+    -webkit-transform 0.2s ease-in-out;
+}
+
+.main-nav ul li a:hover::before,
+.main-nav ul li a.active::before {
+  width: 100%;
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li a.active {
+  color: #3bdbc1;
+}
+
+.main-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-nav ul li {
+  padding: 0px 1.5625rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.close,
+.toggle {
+  display: none;
+}
+
+/* header section css end */
+/* banner section css start */
+.site-banner {
+  background-image: url(../images/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+}
+
+.site-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(14deg, rgb(0 0 0 / 71%) 0%, rgb(31 30 44 / 80%) 22%, rgb(31 30 44 / 86%) 47%);
+}
+
+.banner-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.banner-text {
+  max-width: 800px;
+  text-align: center;
+  margin: auto;
+}
+
+.banner-text h1 {
+  font-size: 45px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.banner-text p {
+  font-size: 18px;
+  color: #c5c3c3;
+  line-height: 1.6;
+}
+
+/* .what-text h3 {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111;
+  line-height: 1.1;
+} */
+/* .what-text p {
+  font-size: 16px;
+  text-align: center;
+  color: #777;
+  line-height: 1.7;
+} */
+.what-text {
+  text-align: center;
+}
+
+.what-img {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  padding: 3px;
+  margin-bottom: 15px;
+}
+
+.what-we-do .col-md-6 {
+  margin: 12px 0;
+}
+
+/* banner section css end */
+
+/* Why Betlinebrokers section css start */
+.why-wrap {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%;
+  background-color: #fff;
+}
+
+.why-img {
+  height: 350px;
+  overflow: hidden;
+}
+
+.why-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.why-text {
+  padding: 25px;
+}
+
+.why-betlinebrokers .col-md-6 {
+  margin: 15px 0;
+}
+
+/* Why Betlinebrokers section css end */
+
+
+/* Our Commitment section css start */
+
+.commit-text {
+  padding: 25px;
+}
+
+.our-commitment .commit-wrap {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.commit-img {
+  height: 380px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.commit-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.comit-group {
+  width: 49%;
+}
+
+.comit-number input {
+  margin-bottom: 20px;
+}
+
+.comit-web input {
+  margin-bottom: 20px;
+}
+
+.comit-web input,
+.comit-number input,
+.comit-group input,
+.comit-area textarea {
+  width: 100%;
+  height: 45px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #777;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+
+}
+
+.comit-area textarea {
+  height: 250px;
+}
+
+.cmt-form-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.comit-submit button {
+  width: 100%;
+  padding: 15px 30px;
+  font-size: 14px;
+  border: 2px solid #48ddc5;
+  border-radius: 5px;
+  background-color: #48ddc5;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 25px;
+  transition: all 0.3s linear;
+}
+
+.comit-submit button:hover {
+  background-color: transparent;
+  color: #48ddc5;
+}
+
+.comit-submit {
+  text-align: center;
+}
+
+.commit-form {
+  padding: 25px;
+}
+
+/* Our Commitment section css end */
+/* terms styling start */
+.terms__section {
+  position: relative;
+  height: 500px;
+  background-image: url(../images/terms.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  margin-top: 0;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.terms__section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: -1;
+}
+
+.terms_conditons {
+  padding: 40px 0;
+  background: #faf9f7;
+}
+
+section.terms_conditons h3 {
+  margin-top: 10px;
+}
+
+.terms_conditons a {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.terms__section .banner__text h1 {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.banner__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  width: 80%;
+  transform: translate(-50%, -50%);
+}
+
+.banner__text h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.terms_conditons ul li {
+  list-style-type: disc;
+  margin-left: 15px;
+}
+
+.terms_conditons ol li {
+  margin-left: -9px;
+  list-style-type: unset;
+
+}
+
+/* terms styling end */
+/* privacy styling start */
+.privacy__section {
+  position: relative;
+  height: 500px;
+  background-image: url(../images/privacy.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  margin-top: 0;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.privacy__section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: -1;
+}
+
+.privacy-policy {
+  padding: 40px 0;
+  background: #faf9f7;
+}
+
+.privacy-policy a {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.privacy__section .banner__text h1 {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+section.privacy-policy h3 {
+  margin-top: 10px;
+}
+
+section.privacy-policy ul li {
+  padding-bottom: 8px;
+}
+
+section.terms_conditons ul li {
+  padding-bottom: 8px;
+}
+
+/* privacy styling end */
+/* contact styling start */
+.contact__section {
+  position: relative;
+  height: 500px;
+  background-image: url(../images/contact.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  margin-top: 0;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact__section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: -1;
+}
+
+.contact_section {
+  padding: 60px 0;
+  background: #faf9f7;
+}
+
+input.form-control.sub_btn {
+  width: 200px;
+  padding: 10px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  transition: all 0.5s;
+}
+
+input.form-control.sub_btn:hover {
+
+  background-color: #fff;
+  color: var(--primary-color);
+  border: 1px solid #fff;
+}
+
+.row.email {
+  padding: 0;
+}
+
+.row.email p a {
+  color: var(--primary-color);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  line-height: 28px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.info_right {
+  background: var(--primary-color);
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.left_side_first h3 {
+  margin-top: 20px;
+}
+
+.info_left {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  color: var(--primary-color);
+}
+
+/* contact styling end */
+/* footer styling start */
+footer {
+  background: #000;
+}
+
+.footer_human {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.copy_right {
+  border-top: 1px solid #48ddc5;
+  padding-top: 20px;
+}
+
+footer {
+  background: #000;
+  padding: 40px 20px;
+}
+
+.foot_other ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.foot_other ul li a {
+  color: #fff;
+}
+
+.foot_other ul li a:hover {
+  color: #48ddc5;
+}
+
+.copy_right p {
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+}
+
+.copy_right {
+  border-top: 1px solid #48ddc5;
+}
+
+.copy_right a {
+  color: #fff;
+}
+
+.copy_right a:hover {
+  color: #48ddc5;
+}
+
+.form-add {
+  background: #000;
+}
+.foot_one img {
+  max-width: 150px;
+}
+/* footer styling end */

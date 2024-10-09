@@ -1,0 +1,103 @@
+@media (max-width: 1050px) {
+  html {
+    font-size: 15px;
+  }
+  .banner__text h1 {
+    font-size: 40px;
+}
+}
+
+@media (max-width: 992px) {
+  .toggle img {
+    filter: invert(1);
+}
+  .main-nav ul {
+    align-items: start;
+    flex-direction: column;
+  }
+  .main-nav ul li {
+    padding: 10px 0;
+  }
+  .main-nav {
+    position: fixed;
+    right: 0;
+    top: 0%;
+    transform: translateX(100%);
+    height: 100vh;
+    width: 300px;
+    background: #f4f4f1;
+    z-index: 99;
+    padding: 50px 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 0.3s linear;
+
+}
+  .menuToggle .main-nav {
+    transform: translateX(0px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+  .main-nav ul li a {
+    color: #211f2c;
+  }
+  .close {
+    display: block;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    cursor: pointer;
+  }
+  .menuToggle::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: #000;
+    z-index: 9;
+    opacity: 0.7;
+  }
+  .toggle {
+    display: block;
+    width: 25px;
+  }
+
+
+}
+@media (max-width: 767px) {
+  .banner__text h1 {
+    font-size: 30px;
+}
+h3 {
+  font-size: 22px;
+
+}
+.col-md-6 {
+  width: 100%;
+}
+.commit-form {
+  padding: 25px 0;
+}
+.contact_section {
+  padding: 40px 0;
+}
+.home_form{
+  padding: 25px;
+}
+.footer_human {
+  flex-direction: column;
+  gap: 30px;
+}
+}
+@media (max-width: 575px) {
+.foot_other ul {
+  align-items: center;
+  flex-direction: column;
+}
+p {
+  font-size: 14px;
+}
+}
